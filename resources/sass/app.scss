@@ -62,19 +62,21 @@ header {
     background-image: url("/images/jumbotron.jpg");
     background-position-x: center;
     background-size: 100%;
-    div {
+}
+
+.container {
+    background-color: #1c1c1c;
+    position: relative;
+    .series {
         text-transform: uppercase;
         background-color: #0282f9;
         padding: 10px;
         display: inline-block;
         color: #fff;
         position: absolute;
-        bottom: -1rem;
+        top: -1rem;
         left: 15%;
     }
-}
-.container {
-    background-color: #1c1c1c;
     .row {
         width: 75%;
         display: flex;
@@ -86,6 +88,10 @@ header {
             margin: 20px 10px;
             color: #fff;
             text-align: center;
+            a {
+                text-decoration: none;
+                color: #fff;
+            }
             img {
                 aspect-ratio: 1 / 1;
                 width: 100%;
@@ -204,5 +210,74 @@ header {
         img {
             margin: 0 5px;
         }
+    }
+}
+
+.showcase-top {
+    background-color: #0282f9;
+    height: 70px;
+    img {
+        position: relative;
+        top: -250px;
+        margin-left: 20%;
+        border: 1px solid #fff;
+        border-radius: 3px;
+    }
+}
+
+.row {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container {
+    &_white {
+        padding: 50px 0;
+        background-color: #fff;
+        .row {
+            justify-content: space-between;
+            div {
+                width: 60%;
+                h2 {
+                    text-transform: uppercase;
+                    color: #003a5e;
+                }
+                .info {
+                    background-color: #55ba59;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    margin: 20px 0;
+                    p{
+                        padding: 0 20px;
+                        color: #fff;
+                        span{
+                            margin: 0px 10px;
+                        }
+                        &:last-child{
+                            border-left: 1px solid rgba($color: #000000, $alpha: 0.3);
+                        }
+                    }
+                    div {
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                }
+                p {
+                    color: grey;
+                    line-height: 1.5rem;
+                    margin: 15px 0;
+                }
+            }
+            img {
+                width: 25%;
+            }
+        }
+    }
+    &_grey {
+        border-top: 1px solid rgba($color: #000000, $alpha: 0.3);
+        padding: 50px 0;
+        background-color: #f6f6f6;
     }
 }

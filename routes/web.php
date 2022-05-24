@@ -19,3 +19,11 @@ Route::get('/', function () {
 
     return view('homepage', ['comics' => $comics]);
 })-> name ('home');
+
+
+Route::get('/comics/{id}', function($id){
+    $comics = config('comics');
+    $comic = $comics[$id];
+
+    return view('comics', ['comic' => $comic]);
+})-> name('comics');

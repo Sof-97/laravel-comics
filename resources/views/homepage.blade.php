@@ -1,12 +1,18 @@
 @extends('layouts.basepage')
+@section('title', 'Homepage')
 
 @section('content')
 <div class="container">
+    <div class="series">
+        current series
+    </div>
     <div class="row">
-        @foreach ($comics as $comic)
+        @foreach ($comics as $key => $value)
         <div class="card">
-            <img src="{{$comic['thumb']}}" alt="img">
-            <h3>{{$comic['series']}}</h3>
+            <a href="{{ route('comics', ['id' => $key]) }}">
+                <img src="{{$value['thumb']}}" alt="img">
+                <h3>{{$value['series']}}</h3>
+            </a>
         </div>
         @endforeach
     </div>
@@ -16,4 +22,5 @@
         </p>
     </div>
 </div>
+@include('partials.store')
 @endsection

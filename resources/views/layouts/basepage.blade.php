@@ -1,9 +1,8 @@
 @include ('partials.header')
-
 <main>
-    @include('partials.jumbo')
-    
+    <div class="jumbotron">
+    </div>
+
     @yield('content')
 </main>
-
 @include('partials.footer')

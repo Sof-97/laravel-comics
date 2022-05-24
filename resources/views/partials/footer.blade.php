@@ -1,5 +1,3 @@
-@include('partials.store')
-
 <div class="footer">
     <div class="container">
         <div class="menu">
