@@ -100,11 +100,109 @@ header {
     .load {
         display: flex;
         justify-content: center;
-        p {display: inline-block;
+        position: relative;
+        bottom: 2rem;
+        p {
+            display: inline-block;
             text-transform: uppercase;
             color: #fff;
             background-color: #0282f9;
             padding: 10px;
+        }
+    }
+}
+
+.store {
+    background-color: #0282f9;
+    padding: 30px 0;
+    .container {
+        background-color: #0282f9;
+        width: 75%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        .card {
+            display: flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: #fff;
+            font-weight: bold;
+            img {
+                height: 90px;
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.footer {
+    background-image: url("/images/footer-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    .container {
+        background: transparent;
+        width: 30%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 0;
+        margin-left: 10%;
+        .menu {
+            margin: 0 30px;
+            color: #fff;
+            &:last-child {
+                width: 100%;
+            }
+            h4 {
+                text-transform: uppercase;
+            }
+            ul {
+                list-style: none;
+                margin-top: 10px;
+                li {
+                    font-weight: 400;
+                    opacity: 0.5;
+                    margin: 3px 0;
+                }
+            }
+        }
+    }
+    .image-logo {
+        min-height: 100%;
+        width: 50%;
+        background-image: url("/images/dc-logo-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.social {
+    display: flex;
+    background-color: #303030;
+    padding: 20px 0;
+    justify-content: space-around;
+    align-items: center;
+    div {
+        &:first-child {
+            border: 2px solid #0282f9;
+            height: fit-content;
+        }
+        vertical-align: middle;
+        display: inline-block;
+        padding: 10px;
+        text-transform: uppercase;
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        span {
+            font-weight: bold;
+            color: #0282f9;
+        }
+        img {
+            margin: 0 5px;
         }
     }
 }
