@@ -326,3 +326,42 @@ header .bot-header .search-bar i {
   background-color: #f6f6f6;
 }
 
+.container_grey h3 {
+  width: 100%;
+  font-size: 2rem;
+  color: #003a5e;
+  margin-bottom: 20px;
+}
+
+.container_grey div.row {
+  justify-content: space-around;
+}
+
+.container_grey div.row > div {
+  width: 40%;
+}
+
+.container_grey div.row .talent,
+.container_grey div.row .specs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container_grey div.row .talent div:first-of-type,
+.container_grey div.row .specs div:first-of-type {
+  flex-grow: 1;
+}
+
+.container_grey div.row .talent div:first-of-type p,
+.container_grey div.row .specs div:first-of-type p {
+  min-width: 100%;
+}
+
+.container_grey div.row .talent p,
+.container_grey div.row .specs p {
+  padding: 10px 0;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
